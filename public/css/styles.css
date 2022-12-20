@@ -1,0 +1,292 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #EBEBEB;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+body header {
+    background-color: #EAC926;
+}
+
+body header img {
+    width: 80vw;
+}
+
+body section img {
+    width: 100%;
+}
+
+/****** HEADER ******/
+/* menu */
+div.burguer-menu {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+div.burguer-menu i {
+    background-color: #1259c3;
+    border-radius: 5px;
+    color: white;
+    font-size: 30px;
+    height: 30px;
+    width: 30px;
+    /* margin: 10px 0 20px 0px; */
+    padding: 10px;
+}
+
+/* buscador */
+header div.input {
+    background-color: white;
+    border: 1px solid black;
+    width: 250px;
+    color: gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header div.input i {
+    text-align: right;
+}
+
+body header p {
+    text-align: center;
+}
+
+/* nav */
+header nav {
+    font-size: 12px;
+}
+
+
+header ul li {
+    list-style-type: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/****** MAIN ******/
+
+/* fuentes */
+h3 {
+    font-size: 24px;
+}
+
+.descuentos {
+    font-size: 16px;
+    color: #39b54a;
+}
+
+.descripciones {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.div-descripciones {
+    display: none;
+}
+
+.unProducto:hover .div-descripciones {
+    display: block;
+}
+
+
+.precios {
+    font-size: 18px;
+    padding-right:5px;
+}
+
+.titulo {
+    font-size: 24px;
+    padding-left: 10px;
+}
+
+
+/* contenedores */
+body main {
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.divProductos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.unProducto {
+    background-color: white;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.artProducto {
+    /* margin-bottom: 10px; */
+    border-top: solid #EBEBEB 1px;
+    /* width: 100%; */
+    background-color: white;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+
+/* camioncito */
+/* .circuloTruck {
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circuloTruck i {
+    color: #39b54a;
+} */
+
+.artProducto i {
+    color: #39b54a;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 30px;
+    left: 85%;
+}
+
+.artProducto i:hover {
+    transform: rotateZ(-90deg);
+    transition: all 0.5s;
+}
+
+
+.precioDescuento {
+    display: flex;
+    align-items: center;
+}
+
+/****** FOOTER ******/
+
+footer {
+   padding-top: 30px;
+   text-align: center;
+   background-color: white;
+}
+
+footer div i {
+    font-size: 2em;
+    /* margin-bottom: 10px; */
+    color: #1259c3;
+}
+
+footer div.copyright {
+    color: #666;
+    text-align: left;
+}
+
+header nav {
+    display: none;
+}
+
+/****** MEDIA QUERY ******/
+
+@media (min-width: 769px) {
+    /****** HEADER ******/
+    /* menu */
+    
+    header div.header-sin-categorias {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    body header img {
+        width: 20vw;
+    }
+
+    body header input {
+        height: 100%;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: space-around;
+        font-size: 16px;
+    }
+
+    header nav ul li {
+        margin: 5px;
+
+    }
+    
+    div.burguer-menu {
+        display: none;
+    }
+    
+    /****** MAIN ******/
+    /* contenedores */
+
+    .unProducto {
+        width: 40%;
+        box-sizing: border-box;
+    }
+
+    .unProducto:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+
+
+    /* .unProducto img {
+        width: 100%;
+    } */
+}
+
+@media (min-width: 1280px) {
+   /****** HEADER ******/
+    /* menu */
+    div.burguer-menu {
+        display: none;
+    }
+    
+    /****** MAIN ******/
+    /* contenedores */
+    
+    .unProducto {
+        width: 20%;
+        box-sizing: border-box;
+    }
+
+    .unProducto:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .footer-iconos {
+        display: flex;
+    }
+
+    .footer-iconos div i:hover {
+        color: #EAC926;
+    }
+}

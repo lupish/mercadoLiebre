@@ -1,0 +1,41 @@
+main form div {
+    padding-top: 10px;
+}
+
+main form div p {
+    font-weight: bold;
+}
+
+.cb-intereses-usuario {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 0px;
+}
+
+main form div {
+    padding: 10px;
+    width: 100%;
+}
+
+main form div
+    input[type=text]
+    , input[type=email] 
+    , input[type=date] 
+    , input[type=password] {
+    width: 90%;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+}
+
+.botones button {
+    margin: 10px;
+    color: white;
+    background-color: #1259c3;
+    border-radius: 20px;
+    width: 100%;
+    padding: 5px;
+}
