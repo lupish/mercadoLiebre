@@ -14,7 +14,7 @@ body header {
 }
 
 body header img {
-    width: 80vw;
+    width: 50%;
 }
 
 body section img {
@@ -43,15 +43,21 @@ div.burguer-menu i {
 header div.input {
     background-color: white;
     border: 1px solid black;
-    width: 250px;
+    width: 45%;
     color: gray;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 20px;
 }
 
 header div.input i {
     text-align: right;
+}
+
+header div.input p {
+    white-space: nowrap;
+  overflow: hidden;
 }
 
 body header p {
@@ -203,20 +209,26 @@ header nav {
     display: none;
 }
 
+header div.header-sin-categorias {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 5px;
+}
+
 /****** MEDIA QUERY ******/
 
 @media (min-width: 769px) {
     /****** HEADER ******/
     /* menu */
-    
-    header div.header-sin-categorias {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
 
     body header img {
-        width: 20vw;
+        width: 25%;
+    }
+
+    header div.input {
+        width: 25%;
     }
 
     body header input {
