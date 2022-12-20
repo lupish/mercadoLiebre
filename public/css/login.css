@@ -28,6 +28,10 @@ main form div input {
     transition: all 0.5s;
 }
 
+.botones button a {
+    color: white;
+    text-decoration: none;
+}
 
 main form {
     display: flex;
