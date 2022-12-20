@@ -4,7 +4,7 @@ const app = express()
 app.use(express.static('public')); // indica donde estan los archivos estaticos de nuestro proyecto
 
 const port = process.env.port || 3030;
-app.listen(3030, () => console.log(`Server running in ${port}`));
+app.listen(port, () => console.log(`Server running in ${port}`));
 
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/views/home.html');
