@@ -40,7 +40,7 @@ div.burguer-menu i {
 }
 
 /* buscador */
-header div.input {
+header form.input {
     background-color: white;
     border: 1px solid black;
     width: 45%;
@@ -49,16 +49,25 @@ header div.input {
     justify-content: space-around;
     align-items: center;
     height: 20px;
+    border-radius: 10px;
+    margin: 0px;
 }
 
-header div.input i {
+header form.input .search {
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+}
+
+header form.input i {
     text-align: right;
 }
 
-header div.input p {
+/*header form.input p {
     white-space: nowrap;
   overflow: hidden;
-}
+}*/
 
 body header p {
     text-align: center;
@@ -196,8 +205,12 @@ footer {
 
 footer div i {
     font-size: 2em;
-    /* margin-bottom: 10px; */
+    margin-bottom: 10px;
     color: #1259c3;
+}
+
+footer div h3 {
+    margin: 0px;
 }
 
 footer div.copyright {
@@ -227,7 +240,7 @@ header div.header-sin-categorias {
         width: 25%;
     }
 
-    header div.input {
+    header form.input {
         width: 25%;
     }
 
