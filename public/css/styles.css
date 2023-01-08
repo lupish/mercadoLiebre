@@ -146,29 +146,15 @@ body main {
 }
 
 .artProducto {
-    /* margin-bottom: 10px; */
     border-top: solid #EBEBEB 1px;
-    /* width: 100%; */
     background-color: white;
-    padding: 15px;
     box-sizing: border-box;
+    height: 13vh;
+    position: relative;
+    padding-top: 0xp;
+    padding-bottom: 0px;
+    padding-left: 15px;
 }
-
-
-/* camioncito */
-/* .circuloTruck {
-    border-radius: 100%;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.circuloTruck i {
-    color: #39b54a;
-} */
 
 .artProducto i {
     color: #39b54a;
@@ -179,9 +165,15 @@ body main {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    bottom: 30px;
-    left: 85%;
+    position: absolute;
+    top: -15px;
+    right: 15px;
+}
+
+.artProducto h3 {
+    padding: 0px;
+    margin: 0px;
+    color: #666;
 }
 
 .artProducto i:hover {
