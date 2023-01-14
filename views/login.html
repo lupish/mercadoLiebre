@@ -17,7 +17,11 @@
     <header class="fondo_amarillo">
         <div class="header-sin-categorias">
             <img src="/img/logo-mercado-liebre.svg" alt="Logo">
-            <div class="input">Buscar productos, marcas <i class="fa fa-search"></i></div>
+            <form class="input">
+                <input class="search" type="text" placeholder="Buscar productos, marcas">
+                <i class="fa fa-search"></i>
+            </form>
+            
             <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
         </div>
         
@@ -39,17 +43,20 @@
         </div>
     </header>
     <main>
-        <form action="" method="post">
-            <div>
-                <input type="text" name="nombre-usuario" id="nombre-usuario" placeholder="Nombre de usuario" required>
-            </div>
-            <div>
-                <input type="password" name="pass" id="pass" placeholder="Elegí tu contraseña" required>
-            </div>
-            <div class="botones">
-                <button type="submit"><a href="/">Enviar</a></button>
-            </div>
-        </form>
+        <section class="form-login">
+            <h2 class="iniciar-sesion">Iniciá sesión en Mercado Liebre</h2>
+            <form action="" method="post">
+                <div>
+                    <input type="text" name="nombre-usuario" id="nombre-usuario" placeholder="Nombre de usuario" required>
+                </div>
+                <div>
+                    <input type="password" name="pass" id="pass" placeholder="Elegí tu contraseña" required>
+                </div>
+                <div class="botones">
+                    <button type="submit"><a href="/">Enviar</a></button>
+                </div>
+            </form>
+        </section>
     </main>
     <footer>
         <div class="footer-iconos">

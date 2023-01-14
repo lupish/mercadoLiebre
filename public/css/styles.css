@@ -208,6 +208,7 @@ footer div h3 {
 footer div.copyright {
     color: #666;
     text-align: left;
+    margin-left: 10px;
 }
 
 header nav {
